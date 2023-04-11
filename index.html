@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClassRoom Manager</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Classroom Manager</h1>
+    <h1 class="main-title">Classroom Manager</h1>
+    <button onclick="colorMainTitle()">colora titolo</button>
     <ul id="student-list">
-
     </ul>
     <button onclick="shuffleTheClassroom()">Rimescola la classe</button>
     <div>
         <h3>Inserimento Studente</h3>
         <div>
             <span>nome</span>
-            <input type="text">
+            <input id="name-input" type="text">
         </div>
         <div>
             <span>cognome</span>
-            <input type="text">
+            <input id="surname-input" type="text">
         </div>
         <button onclick="addStudentToClassroom()">Inserisci studente</button>
     </div>
+
 </body>
+<script src="./student.js"></script>
+<script src="./classroom.js"></script>
+<script src="./main.js"></script>
+<!-- <script src="./sort.js"></script> -->
 </html>
