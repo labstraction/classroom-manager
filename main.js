@@ -19,7 +19,18 @@ displayClassroom(classroom1);
 addStudentToClassroom();
 
 
+
 function displayClassroom(classroom){
+
+    const stundentList = document.getElementById('student-list');
+    stundentList.innerHTML = classroom.students
+                            .map((stud) => `<li class="list-element">${stud.name} ${stud.surname}<div class="strange-div"></div></li>`)
+                            .join('');
+
+}
+
+
+function displayClassroom3(classroom){
 
     const stundentList = document.getElementById('student-list');
     stundentList.innerHTML = '';
